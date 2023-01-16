@@ -1,0 +1,12 @@
+@use './resets';
+
+#root {
+  font-family: 'Poppins';
+  font-weight: 500;
+  background-color: #fafafb;
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+}

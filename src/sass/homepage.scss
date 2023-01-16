@@ -1,0 +1,30 @@
+.homepage {
+  text-align: center;
+  h1 {
+    font-weight: 500;
+    font-size: 1.35rem;
+  }
+  .drop-area {
+    background-color: #f6f8fb;
+    border: 1px dashed #97bef4;
+    border-radius: 12px;
+    padding: 1em;
+
+    img {
+      margin: 1em auto 1.5em;
+    }
+  }
+  p {
+    font-size: 0.95rem;
+    margin-block: 0.45em;
+  }
+  button {
+    border: none;
+    outline: none;
+    font-family: 'Noto Sans';
+    background-color: #2f80ed;
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 0.75em 1.3em;
+  }
+}
