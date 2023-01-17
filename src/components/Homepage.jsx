@@ -44,7 +44,7 @@ function Homepage({ setErrorMessage, setUploadState, setImageUrl }) {
         <p>Drag and drop your image here</p>
       </div>
       <p>or</p>
-      <input type="file" name="file" id="file" onChange={onFileDrop} />
+      <input type="file" name="file" id="file" onInput={onFileDrop} />
       <label htmlFor="file">Choose a file</label>
     </Card>
   )
