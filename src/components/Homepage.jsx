@@ -18,6 +18,7 @@ function Homepage({ setErrorMessage, setUploadState, setImageUrl }) {
     const file = e.target.files?.[0] || e.dataTransfer.files[0]
     if (file.type.slice(0, 5) !== 'image') {
       setErrorMessage('The chosen file is not an image')
+      e.target.value = null
       return
     }
 
@@ -44,7 +45,7 @@ function Homepage({ setErrorMessage, setUploadState, setImageUrl }) {
         <p>Drag and drop your image here</p>
       </div>
       <p>or</p>
-      <input type="file" name="file" id="file" onInput={onFileDrop} />
+      <input type="file" name="file" id="file" onChange={onFileDrop} />
       <label htmlFor="file">Choose a file</label>
     </Card>
   )
